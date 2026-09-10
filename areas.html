@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Áreas da Tecnologia — ELO Digital</title>
+
+ <link rel="icon" type="image/png" href="logo/logo.png">
+
+  <link rel="stylesheet" href="css/tokensdevariaveis.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/componentesdosite.css">
+  <link rel="stylesheet" href="css/areas.css">
+  <link rel="stylesheet" href="css/ajustesdetela.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <img src="logo/logo.png" alt="" class="nav__brand-mark">
+        <span class="nav__brand-text">
+          <span class="nav__brand-name">ELO<span> DIGITAL</span></span>
+        </span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html" class="nav__link">Início</a>
+        <a href="areas.html" class="nav__link">Áreas</a>
+        <a href="quiz.html" class="nav__link">Quiz</a>
+        <a href="referencias.html" class="nav__link">Referências</a>
+      </nav>
+      <a href="quiz.html" class="btn btn--primary btn--sm nav__cta">Fazer o quiz</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="page-header">
+      <div class="container">
+        <p class="mono-label page-header__eyebrow">// Panorama setorial</p>
+        <h1>Oito áreas da tecnologia, explicadas de forma simples.</h1>
+        <p>
+          Cada setor abaixo traz o conceito básico, os termos mais importantes
+          e um vídeo complementar. O objetivo não é te tornar
+          especialista, e sim te dar uma base real para reconhecer do que se
+          trata e saber por onde seguir estudando.
+        </p>
+      </div>
+    </section>
+
+    <!-- Navegação rápida entre setores -->
+    <nav class="jump-nav" aria-label="Navegação rápida entre áreas">
+      <div class="container">
+        <div class="jump-nav__list">
+          <a href="#programacao" class="jump-nav__item">01 · Programação</a>
+          <a href="#ia" class="jump-nav__item">02 · IA</a>
+          <a href="#ciberseguranca" class="jump-nav__item">03 · Cibersegurança</a>
+          <a href="#nuvem" class="jump-nav__item">04 · Cloud</a>
+          <a href="#dados" class="jump-nav__item">05 · Dados</a>
+          <a href="#redes" class="jump-nav__item">06 · Redes</a>
+          <a href="#iot" class="jump-nav__item">07 · IoT</a>
+          <a href="#imersivas" class="jump-nav__item">08 · RV/RA</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SETOR 01 — PROGRAMAÇÃO E DESENVOLVIMENTO -->
+    <article class="area-detail" id="programacao">
+      <div class="container">
+        <div class="area-detail__header">
+          <svg class="area-detail__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 5 3 12l5 7M16 5l5 7-5 7M13.5 4l-3 16"/></svg>
+          <div class="area-detail__heading">
+            <span class="area-detail__code">Setor 01</span>
+            <h2>Programação e Desenvolvimento de Software</h2>
+          </div>
+        </div>
+
+        <div class="area-detail__body">
+          <div class="area-detail__concepts">
+            <p>
+              Programar é escrever instruções passo a passo para um computador
+              executar, usando linguagens que traduzem a lógica humana em
+              comandos que a máquina entende. É a base de todo software que
+              existe — de um aplicativo de banco a um site institucional.
+            </p>
+            <div class="concept-list">
+              <div class="concept-list__item">
+                <strong>Algoritmo</strong>
+               é uma sequência de passos finitos e bem definidos para resolver um problema. Ou seja, algoritimo é a "receita" que vem antes de qualquer código.
+              </div>
+              <div class="concept-list__item">
+                <strong>Linguagens de programação</strong>
+                Cada uma tem uma sintaxe própria (Python, JavaScript, Java, C#), escolhida conforme o tipo de projeto.
+              </div>
+              <div class="concept-list__item">
+                <strong>Front-end e back-end</strong>
+                Front-end é o que a pessoa usuária vê e usa. Enquanto  back-end processa dados e regras por trás da tela.
+              </div>
+              <div class="concept-list__item">
+                <strong>Ciclo de desenvolvimento</strong>
+                Escrever código, testar, corrigir erros e publicar. é um processo contínuo, não uma etapa única.
+              </div>
+            </div>
+          </div>
+
+          <aside class="area-detail__aside">
+            <div class="card card--tactical mercado-callout">
+              <span class="mono-label">Mercado</span>
+              <p>Desenvolvedor(a) back-end está entre as funções de tecnologia mais requisitadas do país, segundo levantamento setorial mais recente.</p>
+            </div>
+            <p class="area-detail__source">Conceitos com base na documentação pública da Mozilla (MDN Web Docs). Dado de mercado: Brasscom, 2025.</p>
+          </aside>
+        </div>
+
+        <div class="area-detail__video">
+          <p class="area-detail__video-label mono-label"> Vídeo complementar</p>
+          <div class="video-slot" data-youtube="https://www.youtube.com/watch?v=lQowHV8tfcg&pp=ygUrUHJvZ3JhbWHDp8OjbyBlIERlc2Vudm9sdmltZW50byBkZSBTb2Z0d2FyZdIHCQn-CwGHKiGM7w%3D%3D" data-video-title="Vídeo sobre Programação e Desenvolvimento de Software"></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SETOR 02 — INTELIGÊNCIA ARTIFICIAL -->
+    <article class="area-detail" id="ia">
+      <div class="container">
+        <div class="area-detail__header">
+          <svg class="area-detail__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+          <div class="area-detail__heading">
+            <span class="area-detail__code">Setor 02</span>
+            <h2>Inteligência Artificial</h2>
+          </div>
+        </div>
+
+        <div class="area-detail__body">
+          <div class="area-detail__concepts">
+            <p>
+              Inteligência Artificial é a área da tecnologia dedicada a criar
+              sistemas capazes de simular capacidades humanas como aprender,
+              reconhecer padrões e tomar decisões. serve para que essa tecnologia pare de seguir apenas
+              regras fixas escritas manualmente para cada situação.
+            </p>
+            <div class="concept-list">
+              <div class="concept-list__item">
+                <strong>Machine Learning</strong>
+                O sistema aprende a partir de exemplos e dados, em vez de receber instruções fixas para cada caso.
+              </div>
+              <div class="concept-list__item">
+                <strong>IA generativa</strong>
+                Cria conteúdo novo como: texto, imagem e código  a partir do que aprendeu. É a onda mais recente e mais usada pela população.
+              </div>
+              <div class="concept-list__item">
+                <strong>Dados de treinamento</strong>
+                A qualidade de uma IA depende diretamente da qualidade e da quantidade de dados usados para "ensiná-la".
+              </div>
+              <div class="concept-list__item">
+                <strong>Vieses e limites</strong>
+                Uma IA reproduz todos os padrões, inclusive os problemáticos que estão presentes nos dados usados no seu treinamento.
+              </div>
+            </div>
+          </div>
+
+          <aside class="area-detail__aside">
+            <div class="card card--tactical mercado-callout">
+              <span class="mono-label">Panorama Brasil</span>
+              <p>32% dos usuários de internet no país já usam IA generativa, mas o uso é desigual: 69% na classe A contra 16% nas classes D/E.</p>
+            </div>
+            <p class="area-detail__source">Definição de base: IBM. Dado de adoção: CGI.br/NIC.br, Pesquisa TIC Domicílios 2025.</p>
+          </aside>
+        </div>
+
+        <div class="area-detail__video">
+          <p class="area-detail__video-label mono-label">// Vídeo complementar</p>
+          <div class="video-slot" data-youtube="https://www.youtube.com/watch?v=HNBtdyMjxKU&t=283s&pp=ygULSUEgbyBxdWUgw6k%3D" data-video-title="Vídeo sobre Inteligência Artificial"></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SETOR 03 — CIBERSEGURANÇA -->
+    <article class="area-detail" id="ciberseguranca">
+      <div class="container">
+        <div class="area-detail__header">
+          <svg class="area-detail__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="m9.5 12 2 2 3.5-3.5"/></svg>
+          <div class="area-detail__heading">
+            <span class="area-detail__code">Setor 03</span>
+            <h2>Cibersegurança</h2>
+          </div>
+        </div>
+
+        <div class="area-detail__body">
+          <div class="area-detail__concepts">
+            <p>
+              Cibersegurança é o conjunto de práticas e tecnologias que protege
+              sistemas, redes e dados contra acessos não autorizados, roubo ou
+              danos — tanto para empresas quanto para uso pessoal.
+            </p>
+            <div class="concept-list">
+              <div class="concept-list__item">
+                <strong>Confidencialidade, integridade e disponibilidade</strong>
+                Os três pilares: só quem deve ver os dados vê, os dados não são alterados indevidamente, e o sistema continua acessível.
+              </div>
+              <div class="concept-list__item">
+                <strong>Phishing</strong>
+                Mensagens falsas que imitam empresas ou pessoas confiáveis para roubar senhas e dados.
+              </div>
+              <div class="concept-list__item">
+                <strong>Malware e ransomware</strong>
+                Programas maliciosos que infectam dispositivos; o ransomware sequestra os dados e cobra resgate para devolvê-los.
+              </div>
+              <div class="concept-list__item">
+                <strong>Boas práticas básicas</strong>
+                Senhas fortes e únicas, autenticação em duas etapas, atualizações do sistema em dia e backups regulares.
+              </div>
+            </div>
+          </div>
+
+          <aside class="area-detail__aside">
+            <div class="card card--tactical mercado-callout">
+              <span class="mono-label">Mercado</span>
+              <p>Coordenador(a) de Segurança da Informação está entre as funções de tecnologia mais demandadas do país.</p>
+            </div>
+            <p class="area-detail__source">Conceitos com base em referências públicas da CISA (EUA) e da ISACA. Dado de mercado: Brasscom, 2025.</p>
+          </aside>
+        </div>
+
+        <div class="area-detail__video">
+          <p class="area-detail__video-label mono-label">// Vídeo complementar</p>
+          <div class="video-slot" data-youtube="https://www.youtube.com/watch?v=CU2yQxzkvFg&pp=ygUYY2liZXJzZWd1cmFuw6dhIG8gcXVlIMOp" data-video-title="Vídeo sobre Cibersegurança"></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SETOR 04 — CLOUD COMPUTING -->
+    <article class="area-detail" id="nuvem">
+      <div class="container">
+        <div class="area-detail__header">
+          <svg class="area-detail__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 18h10a4 4 0 0 0 .6-7.95 5.5 5.5 0 0 0-10.6 1.6A3.5 3.5 0 0 0 7 18z"/></svg>
+          <div class="area-detail__heading">
+            <span class="area-detail__code">Setor 04</span>
+            <h2>Cloud Computing</h2>
+          </div>
+        </div>
+
+        <div class="area-detail__body">
+          <div class="area-detail__concepts">
+            <p>
+              Computação em nuvem é o uso de servidores, armazenamento e
+              programas disponibilizados pela internet por terceiros, em vez
+              de depender só da capacidade do computador local.
+            </p>
+            <div class="concept-list">
+              <div class="concept-list__item">
+                <strong>IaaS, PaaS e SaaS</strong>
+                Três modelos de serviço: infraestrutura, plataforma ou software prontos, entregues como serviço pela internet.
+              </div>
+              <div class="concept-list__item">
+                <strong>Nuvem pública, privada e híbrida</strong>
+                Pública é compartilhada entre clientes; privada é exclusiva de uma empresa; híbrida combina as duas.
+              </div>
+              <div class="concept-list__item">
+                <strong>Escalabilidade</strong>
+                A capacidade de aumentar ou diminuir recursos conforme a demanda, pagando apenas pelo que se usa.
+              </div>
+              <div class="concept-list__item">
+                <strong>No dia a dia</strong>
+                Google Drive, Netflix e Spotify são exemplos de serviços que rodam sobre infraestrutura de nuvem.
+              </div>
+            </div>
+          </div>
+
+          <aside class="area-detail__aside">
+            <div class="card card--tactical mercado-callout">
+              <span class="mono-label">Mercado</span>
+              <p>Conhecimento básico de nuvem já é pré-requisito em boa parte das vagas de tecnologia, mesmo fora de cargos especializados no tema.</p>
+            </div>
+            <p class="area-detail__source">Conceitos com base na documentação pública da Microsoft Azure e do Google Cloud.</p>
+          </aside>
+        </div>
+
+        <div class="area-detail__video">
+          <p class="area-detail__video-label mono-label">// Vídeo complementar</p>
+          <div class="video-slot" data-youtube="https://www.youtube.com/watch?v=97l0Ahu2efE&pp=ygUYQ2xvdWQgQ29tcHV0aW5nIG8gcXVlIMOp" data-video-title="Vídeo sobre Cloud Computing"></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SETOR 05 — CIÊNCIA DE DADOS -->
+    <article class="area-detail" id="dados">
+      <div class="container">
+        <div class="area-detail__header">
+          <svg class="area-detail__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V10M10 19V5M16 19v-7M20 19H4"/></svg>
+          <div class="area-detail__heading">
+            <span class="area-detail__code">Setor 05</span>
+            <h2>Ciência de Dados</h2>
+          </div>
+        </div>
+
+        <div class="area-detail__body">
+          <div class="area-detail__concepts">
+            <p>
+              Ciência de dados combina estatística, programação e conhecimento
+              de negócio para transformar grandes volumes de dados em
+              informação útil para decisões.
+            </p>
+            <div class="concept-list">
+              <div class="concept-list__item">
+                <strong>Big Data</strong>
+                Volumes de dados grandes e complexos demais para serem analisados manualmente.
+              </div>
+              <div class="concept-list__item">
+                <strong>Processo de análise</strong>
+                Coletar, limpar, analisar e visualizar dados — nessa ordem. A limpeza costuma tomar a maior parte do tempo.
+              </div>
+              <div class="concept-list__item">
+                <strong>Machine Learning aplicado</strong>
+                Muitos projetos de dados usam IA para prever padrões futuros a partir do histórico.
+              </div>
+              <div class="concept-list__item">
+                <strong>Aplicações comuns</strong>
+                Sistemas de recomendação, previsão de demanda e detecção de fraude são exemplos do cotidiano.
+              </div>
+            </div>
+          </div>
+
+          <aside class="area-detail__aside">
+            <div class="card card--tactical mercado-callout">
+              <span class="mono-label">Mercado</span>
+              <p>Analista e Cientista de Dados estão entre as funções apontadas como mais importantes para o futuro do setor de tecnologia no Brasil.</p>
+            </div>
+            <p class="area-detail__source">Conceitos com base na documentação pública da IBM. Dado de mercado: Brasscom, 2025.</p>
+          </aside>
+        </div>
+
+        <div class="area-detail__video">
+          <p class="area-detail__video-label mono-label">// Vídeo complementar</p>
+          <div class="video-slot" data-youtube="https://www.youtube.com/watch?v=i6fcwf31htU&pp=ygUVY2llbmNpYSBkZSBkYWRvcyBvcSBl" data-video-title="Vídeo sobre Ciência de Dados"></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SETOR 06 — REDES E CONECTIVIDADE -->
+    <article class="area-detail" id="redes">
+      <div class="container">
+        <div class="area-detail__header">
+          <svg class="area-detail__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M6.7 7.3 11 16M17.3 7.3 13 16M7 6h10"/></svg>
+          <div class="area-detail__heading">
+            <span class="area-detail__code">Setor 06</span>
+            <h2>Redes e Conectividade</h2>
+          </div>
+        </div>
+
+        <div class="area-detail__body">
+          <div class="area-detail__concepts">
+            <p>
+              Redes são o conjunto de tecnologias que conectam dispositivos
+              entre si e à internet, permitindo que dados viajem de um ponto a
+              outro em frações de segundo.
+            </p>
+            <div class="concept-list">
+              <div class="concept-list__item">
+                <strong>Backbone e provedores</strong>
+                A internet depende de uma rede de cabos de alta capacidade que os provedores usam para levar conexão até as casas.
+              </div>
+              <div class="concept-list__item">
+                <strong>Wi-Fi x dados móveis</strong>
+                Wi-Fi conecta por rede local sem fio; dados móveis usam a rede da operadora de celular.
+              </div>
+              <div class="concept-list__item">
+                <strong>Gerações de rede móvel</strong>
+                Cada geração — 3G, 4G, 5G — aumenta a velocidade e reduz o atraso (latência) na transmissão.
+              </div>
+              <div class="concept-list__item">
+                <strong>Qualidade da conexão</strong>
+                Não é só "ter" internet: velocidade, estabilidade e latência definem se ela funciona bem no dia a dia.
+              </div>
+            </div>
+          </div>
+
+          <aside class="area-detail__aside">
+            <div class="card card--tactical mercado-callout">
+              <span class="mono-label">Panorama Brasil</span>
+              <p>A qualidade de conexão ainda é desigual entre áreas urbanas e rurais — a expansão de redes segue como uma das principais barreiras da inclusão digital.</p>
+            </div>
+            <p class="area-detail__source">Conceitos com base em referências públicas da Anatel e do NIC.br.</p>
+          </aside>
+        </div>
+
+        <div class="area-detail__video">
+          <p class="area-detail__video-label mono-label">// Vídeo complementar</p>
+          <div class="video-slot" data-youtube="https://www.youtube.com/watch?v=sxp3jfaV7TA&pp=ygUbcmVkZXMgZSBjb25lY3RpdmlkYWRlIG9xIMOp" data-video-title="Vídeo sobre Redes e Conectividade"></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SETOR 07 — INTERNET DAS COISAS -->
+    <article class="area-detail" id="iot">
+      <div class="container">
+        <div class="area-detail__header">
+          <svg class="area-detail__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="8" width="8" height="8" rx="1"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2 2M17.1 17.1l2 2M4.9 19.1l2-2M17.1 6.9l2-2"/></svg>
+          <div class="area-detail__heading">
+            <span class="area-detail__code">Setor 07</span>
+            <h2>Internet das Coisas (IoT)</h2>
+          </div>
+        </div>
+
+        <div class="area-detail__body">
+          <div class="area-detail__concepts">
+            <p>
+              Internet das Coisas é a rede de objetos físicos equipados com
+              sensores e conexão à internet, capazes de coletar e trocar dados
+              entre si e com sistemas centrais — a mesma linha de definição
+              usada pela regulação brasileira do tema.
+            </p>
+            <div class="concept-list">
+              <div class="concept-list__item">
+                <strong>Sensores e conectividade</strong>
+                Um objeto de IoT precisa de sensores para captar informação e de conexão à rede para transmiti-la.
+              </div>
+              <div class="concept-list__item">
+                <strong>Exemplos comuns</strong>
+                Assistentes de voz, lâmpadas inteligentes, pulseiras de saúde e sensores industriais.
+              </div>
+              <div class="concept-list__item">
+                <strong>Automação</strong>
+                O valor da IoT está em automatizar decisões a partir de dados captados em tempo real, sem intervenção manual constante.
+              </div>
+              <div class="concept-list__item">
+                <strong>Relação com o 5G</strong>
+                Redes de nova geração viabilizam conectar um número muito maior de dispositivos ao mesmo tempo.
+              </div>
+            </div>
+          </div>
+
+          <aside class="area-detail__aside">
+            <div class="card card--tactical mercado-callout">
+              <span class="mono-label">Regulação</span>
+              <p>O Decreto federal nº 9.854/2019 já trata a IoT como prioridade de política pública no Brasil, sinalizando um mercado em expansão.</p>
+            </div>
+            <p class="area-detail__source">Definição de base: Governo Federal / Anatel. Conceitos complementares: documentação pública da Cisco.</p>
+          </aside>
+        </div>
+
+        <div class="area-detail__video">
+          <p class="area-detail__video-label mono-label">// Vídeo complementar</p>
+          <div class="video-slot" data-youtube="https://www.youtube.com/watch?v=Ikvs6B2591M&pp=ygUXaW50ZXJuZXQgZGFzIGNvaXNhcyBpb3Q%3D" data-video-title="Vídeo sobre Internet das Coisas"></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SETOR 08 — REALIDADE VIRTUAL E AUMENTADA -->
+    <article class="area-detail" id="imersivas">
+      <div class="container">
+        <div class="area-detail__header">
+          <svg class="area-detail__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="8" width="19" height="9" rx="4"/><circle cx="8" cy="12.5" r="1.6"/><circle cx="16" cy="12.5" r="1.6"/><path d="M11 12.5h2"/></svg>
+          <div class="area-detail__heading">
+            <span class="area-detail__code">Setor 08</span>
+            <h2>Realidade Virtual e Aumentada</h2>
+          </div>
+        </div>
+
+        <div class="area-detail__body">
+          <div class="area-detail__concepts">
+            <p>
+              Realidade Virtual (RV) cria um ambiente totalmente digital e
+              imersivo. Realidade Aumentada (RA) sobrepõe elementos digitais
+              ao mundo real, sem substituí-lo.
+            </p>
+            <div class="concept-list">
+              <div class="concept-list__item">
+                <strong>Imersão x sobreposição</strong>
+                A RV isola a pessoa em um ambiente simulado; a RA mantém o mundo real visível, só adicionando camadas de informação.
+              </div>
+              <div class="concept-list__item">
+                <strong>Hardware envolvido</strong>
+                Óculos e headsets para RV; câmeras e telas — inclusive de celular comum — para RA.
+              </div>
+              <div class="concept-list__item">
+                <strong>Usos além dos jogos</strong>
+                Treinamentos corporativos, simulações médicas, provadores virtuais e manutenção industrial guiada.
+              </div>
+              <div class="concept-list__item">
+                <strong>Tendência de mercado</strong>
+                Ambas crescem como ferramentas de treinamento e educação — não só como entretenimento.
+              </div>
+            </div>
+          </div>
+
+          <aside class="area-detail__aside">
+            <div class="card card--tactical mercado-callout">
+              <span class="mono-label">Mercado</span>
+              <p>Empresas de varejo e indústria já usam RA para reduzir custos de treinamento — uma área em ascensão no mercado de trabalho tech.</p>
+            </div>
+            <p class="area-detail__source">Conceitos com base em referências públicas do setor de tecnologia imersiva.</p>
+          </aside>
+        </div>
+
+        <div class="area-detail__video">
+          <p class="area-detail__video-label mono-label">// Vídeo complementar</p>
+          <div class="video-slot" data-youtube="https://www.youtube.com/watch?v=vAphmZaAg_0&pp=ygUicmVhbGlkYWRlIHZpcnR1YWxlIGF1bWVudGFkYSBvcSDDqQ%3D%3D" data-video-title="Vídeo sobre Realidade Virtual e Aumentada"></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Convite para o quiz  -->
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <p class="mono-label" style="margin-bottom: var(--sp-3)">// Teste seu conhecimento</p>
+        <h2>Absorveu os conceitos?</h2>
+        <p>Escolha o nível de dificuldade e a área que quiser — o quiz se adapta a você.</p>
+        <a href="quiz.html" class="btn btn--primary">Ir para o quiz →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__brand">
+            <img src="logo/logo.png" alt="" class="nav__brand-mark">
+            <span class="nav__brand-text">
+              <span class="nav__brand-name">ELO<span> DIGITAL</span></span>
+              <span class="nav__brand-tag">Inclusão &amp; Tecnologia</span>
+            </span>
+          </a>
+          <p>Plataforma educativa sobre inclusão digital e tecnologia, desenvolvida como trabalho de conclusão de curso técnico.</p>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Navegação</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="areas.html">Áreas de tecnologia</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Transparência</p>
+          <ul class="footer__links">
+            <li><a href="referencias.html">Fontes e referências</a></li>
+            <li><a href="https://www.gov.br/mcom/pt-br/inclusao-digital-1" target="_blank" rel="noopener">Ministério das Comunicações</a></li>
+            <li><a href="https://cetic.br" target="_blank" rel="noopener">Cetic.br / CGI.br</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-current-year>2026</span> - ELO Digital - site informátivo como TCC</span>
+        <span>Vítor Cassenote Alfaro Lima - Turma:31</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/video-embed.js"></script>
+  <script src="js/areas.js"></script>
+</body>
+</html>

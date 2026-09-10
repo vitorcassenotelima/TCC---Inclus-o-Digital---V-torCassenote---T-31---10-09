@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz — ELO Digital</title>
+  
+  <link rel="icon" type="image/png" href="logo/logo.png">
+
+  <link rel="stylesheet" href="css/tokensdevariaveis.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/componentesdosite.css">
+  <link rel="stylesheet" href="css/quiz.css">
+  <link rel="stylesheet" href="css/ajustesdetela.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <img src="logo/logo.png" alt="" class="nav__brand-mark">
+        <span class="nav__brand-text">
+          <span class="nav__brand-name">ELO<span> DIGITAL</span></span>
+        </span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html" class="nav__link">Início</a>
+        <a href="areas.html" class="nav__link">Áreas</a>
+        <a href="quiz.html" class="nav__link">Quiz</a>
+        <a href="referencias.html" class="nav__link">Referências</a>
+      </nav>
+      <a href="areas.html" class="btn btn--ghost btn--sm nav__cta">Rever conceitos</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header section--tight">
+      <div class="container">
+        <p class="mono-label page-header__eyebrow">// Avaliação</p>
+        <h1>Teste o que você aprendeu</h1>
+        <p>Escolha o nível de dificuldade e a área da tecnologia. O quiz busca perguntas específicas para essa combinação — sem misturar tudo de uma vez.</p>
+      </div>
+    </section>
+
+    <div class="container quiz-app">
+
+      <!-- TELA 1 — CONFIGURAÇÃO -->
+      <div id="quizSetup" class="quiz-setup">
+        <div class="quiz-setup__grid">
+          <div class="quiz-setup__group">
+            <h3>1. Nível de dificuldade</h3>
+            <div id="difficultyOptions" class="quiz-options"></div>
+          </div>
+          <div class="quiz-setup__group">
+            <h3>2. Área da tecnologia</h3>
+            <div id="areaOptions" class="quiz-options"></div>
+          </div>
+        </div>
+        <button id="startQuizBtn" class="btn btn--primary" disabled>Começar quiz</button>
+      </div>
+
+      <!-- TELA 2 — PERGUNTA EM ANDAMENTO -->
+      <div id="quizPlay" class="quiz-play" hidden>
+        <div class="quiz-play__progress">
+          <div class="quiz-play__progress-row">
+            <span class="mono-label" id="quizProgressLabel">Pergunta 1 de 5</span>
+          </div>
+          <div class="quiz-progress-track">
+            <div class="quiz-progress-fill" id="quizProgressFill" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div class="card card--tactical quiz-question-card">
+          <span class="badge badge--signal quiz-question-card__tag" id="quizQuestionTag">Setor · Nível</span>
+          <h2 id="quizQuestionText">Pergunta</h2>
+
+          <ul class="quiz-options-list" id="quizOptionsList"></ul>
+
+          <div class="quiz-feedback" id="quizFeedback" hidden></div>
+
+          <button class="btn btn--primary" id="quizNextBtn" hidden>Próxima pergunta →</button>
+        </div>
+      </div>
+
+      <!-- TELA 3 — RESULTADO -->
+      <div id="quizResults" class="quiz-results" hidden>
+        <p class="mono-label">// Resultado</p>
+        <div class="quiz-results__score" id="quizResultsScore">0/5</div>
+        <p class="quiz-results__message" id="quizResultsMessage"></p>
+        <p class="quiz-results__meta" id="quizResultsMeta"></p>
+        <div class="quiz-results__actions">
+          <button class="btn btn--primary" id="quizRetryBtn">Tentar de novo →</button>
+          <button class="btn btn--ghost" id="quizChangeBtn">Trocar nível / área</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__brand">
+            <img src="logo/logo.png" alt="" class="nav__brand-mark">
+            <span class="nav__brand-text">
+              <span class="nav__brand-name">ELO<span> DIGITAL</span></span>
+              <span class="nav__brand-tag">Inclusão &amp; Tecnologia</span>
+            </span>
+          </a>
+          <p>Plataforma educativa sobre inclusão digital e tecnologia, desenvolvida como trabalho de conclusão de curso técnico.</p>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Navegação</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="areas.html">Áreas de tecnologia</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Transparência</p>
+          <ul class="footer__links">
+            <li><a href="referencias.html">Fontes e referências</a></li>
+            <li><a href="https://www.gov.br/mcom/pt-br/inclusao-digital-1" target="_blank" rel="noopener">Ministério das Comunicações</a></li>
+            <li><a href="https://cetic.br" target="_blank" rel="noopener">Cetic.br / CGI.br</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-current-year>2026</span> - ELO Digital - site informátivo como TCC</span>
+        <span>Vítor Cassenote Alfaro Lima - Turma:31</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/quiz-data.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
