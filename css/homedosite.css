@@ -1,0 +1,327 @@
+/* 
+   Estilos exclusivos da index.html: hero de abertura, seção
+   "o que é inclusão digital", estatísticas e prévia das áreas
+   de tecnologia. Tudo que é reaproveitável entre páginas já
+   está em components.css. 
+
+*/
+
+/* HERO */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-top: var(--sp-9);
+  padding-bottom: var(--sp-10);
+  background: radial-gradient(ellipse 900px 600px at 82% 8%, rgba(127, 163, 95, 0.09), transparent 60%),
+              var(--void);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Grade tática de fundo, só na hero, mais visível que a do body */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(127, 163, 95, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 163, 95, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, black, transparent 85%);
+  pointer-events: none;
+}
+
+/* Gráfico de rede/conexão */
+.hero__network {
+  position: absolute;
+  top: 50%;
+  right: -6%;
+  transform: translateY(-50%);
+  width: min(56vw, 780px);
+  height: auto;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--sp-8);
+  align-items: center;
+}
+
+.hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-5);
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--signal-line);
+  border-radius: var(--radius-sm);
+  background: rgba(127, 163, 95, 0.06);
+}
+
+.hero__eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--signal-bright);
+  box-shadow: 0 0 8px 1px var(--signal-bright);
+}
+
+.hero__title {
+  font-size: var(--fs-hero);
+  margin-bottom: var(--sp-5);
+}
+
+.hero__title span {
+  color: var(--signal-bright);
+}
+
+.hero__subtitle {
+  font-size: var(--fs-body-lg);
+  max-width: 46ch;
+  margin-bottom: var(--sp-6);
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--sp-6);
+}
+
+.hero__source {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  color: var(--text-tertiary);
+  max-width: 46ch;
+}
+
+.hero__source a {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--border-strong);
+}
+
+/* Card de status (leitura tipo HUD) */
+.hero__status {
+  padding: var(--sp-6);
+}
+
+.hero__status-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--sp-5);
+  padding-bottom: var(--sp-4);
+  border-bottom: 1px dashed var(--border-subtle);
+}
+
+.hero__status-num {
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: var(--signal-bright);
+  line-height: 1;
+}
+
+.hero__status-label {
+  font-size: var(--fs-small);
+  color: var(--text-secondary);
+  margin-top: var(--sp-2);
+  max-width: 26ch;
+}
+
+.hero__status-bar-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  color: var(--text-tertiary);
+  margin-bottom: var(--sp-1);
+}
+
+.hero__status-bar-track {
+  height: 6px;
+  background: var(--carbon-line);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: var(--sp-4);
+}
+
+.hero__status-bar-fill {
+  height: 100%;
+  background: var(--signal);
+  border-radius: 4px;
+}
+
+.hero__status-foot {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-tertiary);
+  padding-top: var(--sp-3);
+  border-top: 1px dashed var(--border-subtle);
+}
+
+/* "o que é inclusão digital"*/
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-6);
+}
+
+.mission-card {
+  padding: var(--sp-6);
+}
+
+.mission-card__tag {
+  margin-bottom: var(--sp-4);
+}
+
+.mission-card ul {
+  margin-top: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.mission-card li {
+  position: relative;
+  padding-left: var(--sp-4);
+  font-size: var(--fs-small);
+  color: var(--text-secondary);
+}
+
+.mission-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 1px;
+  background: var(--signal);
+}
+
+/* ESTATÍSTICAS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-4);
+}
+
+.stat-card {
+  padding: var(--sp-5);
+}
+
+.stat-card__value {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: var(--sp-2);
+}
+
+.stat-card__value em {
+  font-style: normal;
+  color: var(--signal-bright);
+}
+
+.stat-card__label {
+  font-size: var(--fs-small);
+  color: var(--text-secondary);
+  margin-bottom: var(--sp-3);
+}
+
+.stat-card__source {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-tertiary);
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* PRÉVIA DAS ÁREAS DE TECNOLOGIA */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-4);
+}
+
+.area-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  padding: var(--sp-5);
+}
+
+.area-card__icon {
+  width: 42px;
+  height: 42px;
+  color: var(--signal);
+}
+
+.area-card__code {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-tertiary);
+  letter-spacing: 0.08em;
+}
+
+.area-card__title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.area-card__desc {
+  font-size: var(--fs-small);
+  flex-grow: 1;
+}
+
+.area-card__link {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--signal);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Convite FINAL (quiz) */
+.cta-band {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--sp-9);
+  text-align: center;
+  background: linear-gradient(180deg, var(--void), var(--void-deep));
+}
+
+.cta-band__inner {
+  position: relative;
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+.cta-band h2 {
+  margin-bottom: var(--sp-4);
+}
+
+.cta-band p {
+  font-size: var(--fs-body-lg);
+  margin-bottom: var(--sp-6);
+}
+
+.cta-band .btn {
+  margin-inline: auto;
+}

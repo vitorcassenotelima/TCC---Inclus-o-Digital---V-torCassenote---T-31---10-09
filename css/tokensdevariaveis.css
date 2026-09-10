@@ -1,0 +1,90 @@
+/* 
+   esse arquivo aqui tem todas as variáveis de design do site que são usadas em
+   todos os outros arquivos CSS. A ideia é centralizar tudo aqui para 
+   ser fácil de manter e alterar a identidade visual do site sem precisar
+   caçar as cores, fontes e espaçamentos em vários arquivos diferentes.
+   
+*/
+:root {
+  /* COR — SUPERFÍCIES */
+  --void:            #0a0c0d; /* fundo principal do site */
+  --void-deep:        #050705; /* fundo mais profundo (hero e footer) */
+  --carbon:           #141a14; /* superfície de cards e blocos */
+  --carbon-raised:    #1b231b; /* superfície elevada (hover e destaque) */
+  --carbon-line:      #202920; /* preenchimento de inputs e trilhos */
+
+  /* COR — BORDAS E DIVISÓRIAS */
+  --steel:            #26301f2b; 
+  --border-subtle:    #263025;   /* divisórias discretas */
+  --border-strong:    #3a4736;   /* bordas em foco/hover */
+
+  /* COR — SINAL VERDE (acento primário) */
+  --signal:           #7fa35f; /* verde-oliva — acento principal */
+  --signal-bright:    #a8d17c; /* verde mais vivo — hover / glow / foco */
+  --signal-dim:       #3a4a30; /* verde escuro — fundos sutis e tags */
+  --signal-line:      rgba(127, 163, 95, 0.35); /* linhas e traços translúcidos (não é o translúcido de the boys kkkkk) */
+
+  /* COR — ACENTO SECUNDÁRIO */
+  --khaki:            #a8916b;
+  --khaki-dim:        #4a4130;
+
+  /* COR — ALERTA */
+  --amber:            #c68248;
+
+  /* COR — TEXTO */
+  --text-primary:     #eae6d9; /* branco */
+  --text-secondary:   #b7bcae;
+  --text-tertiary:    #7d8477;
+  --text-on-signal:   #0a0d0a; /* texto sobre fundo verde-claro */
+
+  /* TIPOGRAFIA*/
+  --font-display: 'Rajdhani', 'Arial Narrow', sans-serif;
+  --font-body:    'IBM Plex Sans', -apple-system, sans-serif;
+  --font-mono:    'IBM Plex Mono', 'Courier New', monospace;
+
+  /* ESCALA TIPOGRÁFICA  */
+  --fs-hero:    clamp(2.6rem, 6vw, 5.2rem);
+  --fs-h1:      clamp(2.1rem, 4vw, 3.4rem);
+  --fs-h2:      clamp(1.6rem, 3vw, 2.4rem);
+  --fs-h3:      clamp(1.25rem, 2vw, 1.6rem);
+  --fs-body-lg: 1.15rem;
+  --fs-body:    1rem;
+  --fs-small:   0.875rem;
+  --fs-micro:   0.75rem;
+
+  /* ESPAÇAMENTO  */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+  --sp-10: 8rem;
+
+  /* LAYOUT */
+  --container-max: 1220px;
+  --container-pad: clamp(1.25rem, 5vw, 3rem);
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --nav-height: 76px;
+
+  /* Sombras esverdeadas e escuras */
+  --shadow-card: 0 8px 24px -8px rgba(0, 0, 0, 0.55);
+  --shadow-lift: 0 16px 40px -12px rgba(0, 0, 0, 0.65);
+  --glow-signal: 0 0 0 1px var(--signal-line), 0 0 24px -4px rgba(127, 163, 95, 0.35);
+
+  /* TRANSIÇÕES - evita timings ruins*/
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur-med: 300ms;
+  --dur-slow: 600ms;
+
+  /* CAMADAS (z-index) */
+  --z-nav: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+}

@@ -1,0 +1,92 @@
+/* 
+  Estilos exclusivos da referencias.html: lista de fontes
+   agrupadas por categoria, cada uma com organização, título,
+   para que foi usada no site e link para a fonte original.  
+*/
+
+.ref-category {
+  margin-bottom: var(--sp-8);
+}
+
+.ref-category__title {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-5);
+  padding-bottom: var(--sp-3);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.ref-category__title h2 {
+  font-size: 1.3rem;
+}
+
+.ref-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-4);
+}
+
+.ref-item {
+  padding: var(--sp-5);
+}
+
+.ref-item__org {
+  display: block;
+  margin-bottom: var(--sp-2);
+}
+
+.ref-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: var(--sp-2);
+}
+
+.ref-item p {
+  font-size: var(--fs-small);
+  margin-bottom: var(--sp-3);
+}
+
+.ref-item__used-for {
+  font-size: var(--fs-small);
+  color: var(--text-tertiary);
+  margin-bottom: var(--sp-3);
+}
+
+.ref-item__used-for strong {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.ref-item a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.04em;
+  color: var(--signal);
+  text-transform: uppercase;
+}
+
+.ref-item a:hover {
+  color: var(--signal-bright);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Nota de metodologia — bloco de texto corrido */
+.methodology-block {
+  padding: var(--sp-6);
+}
+
+.methodology-block p + p {
+  margin-top: var(--sp-4);
+}
+
+.methodology-block p {
+  font-size: var(--fs-body);
+}
+
+.methodology-block strong {
+  color: var(--text-primary);
+}

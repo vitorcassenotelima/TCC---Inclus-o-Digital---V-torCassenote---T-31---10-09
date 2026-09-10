@@ -1,0 +1,187 @@
+/* 
+   Estilos exclusivos da areas.html: cabeçalho da página,
+   barra de navegação rápida entre setores e o layout de cada
+   bloco de área (conceitos + card de mercado + vídeo).
+   
+*/
+/* CABEÇALHO DA PÁGINA */
+.page-header {
+  padding-top: var(--sp-8);
+  padding-bottom: var(--sp-7);
+  background: radial-gradient(ellipse 800px 400px at 15% 0%, rgba(127, 163, 95, 0.08), transparent 60%),
+              var(--void);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.page-header__eyebrow {
+  margin-bottom: var(--sp-4);
+}
+
+.page-header h1 {
+  font-size: var(--fs-h1);
+  max-width: 18ch;
+  margin-bottom: var(--sp-4);
+}
+
+.page-header p {
+  font-size: var(--fs-body-lg);
+  max-width: 60ch;
+}
+
+/* NAVEGAÇÃO RÁPIDA ENTRE SETORES
+   Barra horizontal com rolagem própria em telas estreitas,
+   funciona como um "índice" sempre à mão.*/
+.jump-nav {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 90;
+  background: rgba(10, 13, 10, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.jump-nav__list {
+  display: flex;
+  gap: var(--sp-2);
+  overflow-x: auto;
+  padding-block: var(--sp-3);
+  scrollbar-width: none;
+}
+
+.jump-nav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.jump-nav__item {
+  flex-shrink: 0;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  transition: border-color var(--dur-fast) var(--ease-standard),
+              color var(--dur-fast) var(--ease-standard),
+              background-color var(--dur-fast) var(--ease-standard);
+}
+
+.jump-nav__item:hover {
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.jump-nav__item.is-active {
+  border-color: var(--signal-line);
+  background: rgba(127, 163, 95, 0.1);
+  color: var(--signal-bright);
+}
+
+/* BLOCO DE CADA ÁREA*/
+.area-detail {
+  padding-block: var(--sp-9);
+  border-bottom: 1px solid var(--border-subtle);
+  scroll-margin-top: calc(var(--nav-height) + 56px);
+}
+
+.area-detail:nth-child(even) {
+  background: var(--void-deep);
+}
+
+.area-detail__header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-6);
+}
+
+.area-detail__icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  color: var(--signal);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--sp-2);
+  background: var(--carbon);
+}
+
+.area-detail__heading .area-detail__code {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.1em;
+  color: var(--text-tertiary);
+  margin-bottom: var(--sp-1);
+}
+
+.area-detail__body {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: var(--sp-7);
+  margin-bottom: var(--sp-6);
+}
+
+.area-detail__concepts > p {
+  font-size: var(--fs-body-lg);
+  margin-bottom: var(--sp-5);
+}
+
+.concept-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.concept-list__item {
+  padding-left: var(--sp-5);
+  border-left: 2px solid var(--border-subtle);
+}
+
+.concept-list__item strong {
+  display: block;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.area-detail__aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.mercado-callout {
+  padding: var(--sp-5);
+}
+
+.mercado-callout .mono-label {
+  display: block;
+  margin-bottom: var(--sp-3);
+}
+
+.mercado-callout p {
+  font-size: var(--fs-small);
+}
+
+.area-detail__source {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+  line-height: 1.6;
+}
+
+/* Bloco dos Vídeos */
+.area-detail__video {
+  margin-top: var(--sp-2);
+}
+
+.area-detail__video-label {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+}
