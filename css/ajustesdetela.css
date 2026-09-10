@@ -1,1 +1,90 @@
+/*
+   Pontos de quebra centralizados. A maioria dos componentes já
+   é fluida (usa clamp/%), então aqui ficam só os ajustes que
+   realmente precisam de uma regra por breakpoint — grids que
+   mudam de colunas, espaçamentos que encolhem, e elementos que
+   se escondem/mostram por tamanho de tela.
 
+   Breakpoints usados no projeto:
+     1024px -> tablets grandes / notebooks pequenos
+     860px  -> tablets 
+     640px  -> celulares
+*/
+
+/*  1024px  */
+@media (max-width: 1024px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-7);
+  }
+
+  .hero__status {
+    max-width: 420px;
+  }
+
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*  860px  */
+@media (max-width: 860px) {
+  .section {
+    padding-block: var(--sp-7);
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-6);
+  }
+
+  .area-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-setup__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*  640px  */
+@media (max-width: 640px) {
+  h1 { font-size: var(--fs-h1); }
+
+  .hero {
+    padding-top: var(--sp-8);
+  }
+
+  .hero__eyebrow {
+    font-size: 0.68rem;
+  }
+
+  .areas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quiz-options {
+    grid-template-columns: 1fr;
+  }
+
+  #areaOptions.quiz-options {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head {
+    margin-bottom: var(--sp-6);
+  }
+}
